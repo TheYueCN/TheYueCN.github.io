@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupFallbackProjects();
 });
 
+
 // PROJECTS - fetch public repos
 async function loadProjects() {
   const grid = document.getElementById("projects-grid");
@@ -116,7 +117,6 @@ if (form) {
     }
   });
 }
-
 
 
 // Fallback static projects shown in case of fetch failure or before username is set
