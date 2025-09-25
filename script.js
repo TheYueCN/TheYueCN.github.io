@@ -4,9 +4,11 @@ const PROJECTS_COUNT = 6;
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
+  initTheme();
   loadProjects();
   setupFallbackProjects();
 });
+
 
 
 // THEME TOGGLE
@@ -14,10 +16,9 @@ function initTheme() {
   const btn = document.getElementById("theme-toggle");
   const stored = localStorage.getItem("theme");
 
-  // apply saved preference
   if (stored === "dark") {
     document.documentElement.classList.add("dark");
-    btn.textContent = "☀️"; // show sun if in dark mode
+    btn.textContent = "☀️";
     btn.setAttribute("aria-pressed", "true");
   }
 
@@ -25,16 +26,17 @@ function initTheme() {
     const isDark = document.documentElement.classList.toggle("dark");
 
     if (isDark) {
-      btn.textContent = "☀️"; // switch to sun icon
+      btn.textContent = "☀️";
       btn.setAttribute("aria-pressed", "true");
       localStorage.setItem("theme", "dark");
     } else {
-      btn.textContent = "🌙"; // switch back to moon icon
+      btn.textContent = "🌙";
       btn.setAttribute("aria-pressed", "false");
       localStorage.setItem("theme", "light");
     }
   });
 }
+
 
 
 // PROJECTS - fetch public repos
@@ -117,6 +119,7 @@ if (form) {
     }
   });
 }
+
 
 // Fallback static projects shown in case of fetch failure or before username is set
 function setupFallbackProjects(){
