@@ -260,14 +260,6 @@ html.dark {
   --primary: #4da3ff;
 }
 
-.avatar-img {
-  width: 220px;
-  height: 220px;
-  border-radius: 18px;
-  object-fit: cover;
-  box-shadow: 0 8px 24px rgba(2,6,23,0.1);
-}
-
 .project-img {
   width: 100%;
   border-radius: 8px;
