@@ -144,9 +144,9 @@ body{
 
 /* About Me & Skills Section */
 .about {
-  background: #0b76ff; /* Blue background */
-  color: #fff;
   padding: 3rem 0;
+  background: #0b76ff; /* blue background */
+  color: #fff;
 }
 
 .about h2, .skills-section h2 {
@@ -207,6 +207,7 @@ body{
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.25);
 }
+
 
 .projects h2, #skills h2, #contact h2{ margin-top:0; margin-bottom:8px; }
 .muted{ color:var(--muted); margin-bottom:12px; }
@@ -393,12 +394,6 @@ html.dark {
 
 .project-links a:hover {
   color: var(--accent);
-}
-
-.blue-bg {
-  background: #0b76ff;
-  color: #fff;
-  width: 100%;
 }
 
 /* small screens */
