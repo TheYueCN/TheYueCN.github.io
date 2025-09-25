@@ -144,9 +144,9 @@ body{
 
 /* About Me & Skills Section */
 .about {
-  padding: 3rem 0;
-  background: #0b76ff; /* blue background */
+  background: #0b76ff; /* Blue background */
   color: #fff;
+  padding: 3rem 0;
 }
 
 .about h2, .skills-section h2 {
@@ -173,13 +173,18 @@ body{
   padding-top: 2rem;
 }
 
-.skills-group {
-  margin-bottom: 2rem;
+/* Make the background stretch full width and height */
+.about, .skills-section {
+  width: 100%;
 }
 
-.skills-group h3 {
-  margin-bottom: 0.8rem;
-  color: #fff;
+.about-right {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skills-group {
+  margin-bottom: 2rem;
 }
 
 .skills-grid {
@@ -191,7 +196,7 @@ body{
 .skill {
   background: rgba(255, 255, 255, 0.15);
   padding: 0.5rem 1rem;
-  border-radius: var(--radius);
+  border-radius: 8px;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
@@ -388,6 +393,12 @@ html.dark {
 
 .project-links a:hover {
   color: var(--accent);
+}
+
+.blue-bg {
+  background: #0b76ff;
+  color: #fff;
+  width: 100%;
 }
 
 /* small screens */
