@@ -2,20 +2,12 @@
 const GITHUB_USERNAME = "starlight-syss"; 
 const PROJECTS_COUNT = 6; 
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("year").textContent = new Date().getFullYear();
-  initTheme();
-  loadProjects();
-  setupFallbackProjects();
-});
-
-
-
 // THEME TOGGLE
 function initTheme() {
   const btn = document.getElementById("theme-toggle");
   const stored = localStorage.getItem("theme");
 
+  // Apply saved theme
   if (stored === "dark") {
     document.documentElement.classList.add("dark");
     btn.textContent = "☀️";
@@ -37,7 +29,12 @@ function initTheme() {
   });
 }
 
-
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("year").textContent = new Date().getFullYear();
+  initTheme(); 
+  loadProjects();
+  setupFallbackProjects();
+});
 
 // PROJECTS - fetch public repos
 async function loadProjects() {
@@ -119,6 +116,7 @@ if (form) {
     }
   });
 }
+
 
 
 // Fallback static projects shown in case of fetch failure or before username is set

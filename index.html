@@ -46,26 +46,21 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>Send me a message using this form:</p>
-
-      <form id="contact-form" action="https://formspree.io/f/myznzdbr" method="POST">
-        <label>
-          Your email
-          <input type="email" name="email" placeholder="you@example.com" required>
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <div class="form-row">
-          <button class="btn primary" type="submit">Send</button>
-        </div>
-        <p id="form-status" class="muted"></p>
-      </form>
-    </section>
-  </main>
+   <form
+     action="https://formspree.io/f/myznzdbr"
+     method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
   <footer class="site-footer">
     <div class="container">
