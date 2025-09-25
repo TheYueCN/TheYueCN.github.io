@@ -75,6 +75,34 @@ function escapeHtml(s){
   return s.replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;");
 }
 
+// CONTACT FORM HANDLING (Formspree)
+const form = document.getElementById("contact-form");
+if (form) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const status = document.getElementById("form-status");
+    status.textContent = "Sending...";
+
+    try {
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        status.textContent = "✅ Thanks! Your message has been sent.";
+        form.reset();
+      } else {
+        status.textContent = "⚠️ Oops, something went wrong. Try again.";
+      }
+    } catch (err) {
+      status.textContent = "⚠️ Network error. Please try again.";
+    }
+  });
+}
+
 // Fallback static projects shown in case of fetch failure or before username is set
 function setupFallbackProjects(){
   const fallback = document.getElementById("projects-fallback");
