@@ -142,13 +142,35 @@ body{
   margin-bottom: 0.5rem;
 }
 
-.skills {
+/* About Me & Skills Section */
+.about {
   padding: 3rem 0;
+  background: #0b76ff; /* blue background */
+  color: #fff;
 }
 
-.skills h2 {
+.about h2, .skills-section h2 {
   margin-bottom: 1.5rem;
-  color: var(--text);
+  color: #fff;
+}
+
+.about-right {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.about-right ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.about-right ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+.skills-section {
+  padding-top: 2rem;
 }
 
 .skills-group {
@@ -157,7 +179,7 @@ body{
 
 .skills-group h3 {
   margin-bottom: 0.8rem;
-  color: var(--text);
+  color: #fff;
 }
 
 .skills-grid {
@@ -167,17 +189,18 @@ body{
 }
 
 .skill {
-  background: var(--panel);
+  background: rgba(255, 255, 255, 0.15);
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   font-weight: 500;
-  color: var(--text);
-  transition: transform 0.2s;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s;
 }
 
 .skill:hover {
   transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .projects h2, #skills h2, #contact h2{ margin-top:0; margin-bottom:8px; }
