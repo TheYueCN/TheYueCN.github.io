@@ -14,13 +14,29 @@ document.addEventListener("DOMContentLoaded", () => {
 function initTheme() {
   const btn = document.getElementById("theme-toggle");
   const stored = localStorage.getItem("theme");
-  if (stored === "dark") document.documentElement.classList.add("dark");
+
+  // apply saved preference
+  if (stored === "dark") {
+    document.documentElement.classList.add("dark");
+    btn.textContent = "☀️"; // show sun if in dark mode
+    btn.setAttribute("aria-pressed", "true");
+  }
+
   btn.addEventListener("click", () => {
     const isDark = document.documentElement.classList.toggle("dark");
-    btn.setAttribute("aria-pressed", String(isDark));
-    localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    if (isDark) {
+      btn.textContent = "☀️"; // switch to sun icon
+      btn.setAttribute("aria-pressed", "true");
+      localStorage.setItem("theme", "dark");
+    } else {
+      btn.textContent = "🌙"; // switch back to moon icon
+      btn.setAttribute("aria-pressed", "false");
+      localStorage.setItem("theme", "light");
+    }
   });
 }
+
 
 // PROJECTS - fetch public repos
 async function loadProjects() {

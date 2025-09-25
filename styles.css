@@ -183,6 +183,28 @@ html.dark {
   --primary: #4da3ff;
 }
 
+/* LIGHT MODE (default via :root) */
+:root {
+  --bg: #ffffff;
+  --panel: #f6f7fb;
+  --text: #0f1724;
+  --muted: #6b7280;
+  --accent: #0ea5a4;
+  --primary: #0b76ff;
+  --radius: 12px;
+  --container-width: 1100px;
+}
+
+/* DARK MODE (when .dark is on <html>) */
+html.dark {
+  --bg: #0b0f13;
+  --panel: #071018;
+  --text: #e6eef6;
+  --muted: #9aa6b2;
+  --accent: #35e6d6;
+  --primary: #4da3ff;
+}
+
 /* small screens */
 @media (max-width:880px){
   .hero{ grid-template-columns:1fr; }
