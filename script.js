@@ -1,14 +1,13 @@
 // script.js
-// Configure your GitHub username here:
 const GITHUB_USERNAME = "starlight-syss"; 
 const PROJECTS_COUNT = 6; 
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
-  initTheme();
   loadProjects();
   setupFallbackProjects();
 });
+
 
 // THEME TOGGLE
 function initTheme() {

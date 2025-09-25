@@ -4,35 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ben Kennedy — Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Ben Kennedy — Student at Belfast Met. Project built with JavaScript, C++, HTML and Python." />
-  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Portfolio of First Last — Web Developer" />
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:,">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home">First Last</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <button id="theme-toggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
-      </nav>
+      <a class="brand" href="#home">Ben Kennedy</a>
     </div>
   </header>
 
   <main>
+   
     <section id="home" class="hero container" tabindex="-1">
       <div class="hero-left">
         <h1>Hi — I'm <span class="accent">Ben Kennedy</span></h1>
         <p class="lead">
-          I am a Student studying Game Development, focusing on programming.
-          I know Python, HTML, and I am learning C++.
+          I am a student studying Game Development. I am teaching myself Python, C++, HTML and Javascript.
         </p>
         <p class="cta-row">
           <a class="btn primary" href="#projects">See projects</a>
-          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
         </p>
         <p class="socials">
           <a href="https://github.com/starlight-syss" target="_blank" rel="noopener">GitHub</a> ·
@@ -44,35 +36,25 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="projects container">
       <h2>Projects</h2>
-      <p class="muted">Public GitHub repos — latest and most starred. (Or custom items below.)</p>
+      <p class="muted">Latest public repositories from GitHub.</p>
       <div id="projects-grid" class="grid" aria-live="polite">
       </div>
 
-      <div id="projects-fallback" class="grid">
-      </div>
+      <div id="projects-fallback" class="grid"></div>
     </section>
 
-    <section id="skills" class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>JavaScript / TypeScript</li>
-        <li>React / Next.js</li>
-        <li>Node.js / Express</li>
-        <li>HTML & CSS (responsive, accessible)</li>
-        <li>Testing, CI/CD, Git</li>
-      </ul>
-    </section>
-
-    
+    <!-- Contact -->
     <section id="contact" class="container contact">
       <h2>Contact</h2>
-      <p>If you'd like to work together, email me at <a href="mailto:bkennedy021107@gmail.com"></a></p>
-      <form id="contact-form" action="mailto:bkennedy021107@gmail.com" method="post" aria-label="Contact">
+      <p>Send me a message using this form:</p>
+
+      <form id="contact-form" action="https://formspree.io/f/myznzdbr" method="POST">
         <label>
           Your email
-          <input type="email" name="from" placeholder="you@example.com" required>
+          <input type="email" name="email" placeholder="you@example.com" required>
         </label>
         <label>
           Message
@@ -81,32 +63,16 @@
         <div class="form-row">
           <button class="btn primary" type="submit">Send</button>
         </div>
+        <p id="form-status" class="muted"></p>
       </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Ben Kennedy— Built with ♥ • <a href="https://github.com/starlight-syss/portfolio" target="_blank" rel="noopener">Source</a></small>
+      <small>© <span id="year"></span> Ben Kennedy — Built with ♥ • <a href="https://github.com/starlight-syss/portfolio" target="_blank" rel="noopener">Source</a></small>
     </div>
   </footer>
-
-<form id="contact-form" action="https://formspree.io/f/myznzdbr" method="POST">
-  <label>
-    Your email
-    <input type="email" name="email" placeholder="you@example.com" required>
-  </label>
-  <label>
-    Message
-    <textarea name="message" rows="4" required></textarea>
-  </label>
-  <div class="form-row">
-    <button class="btn primary" type="submit">Send</button>
-  </div>
-  <p id="form-status" class="muted"></p>
-</form>
-
-
 
   <script src="script.js" defer></script>
 </body>
