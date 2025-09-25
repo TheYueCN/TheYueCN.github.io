@@ -268,6 +268,43 @@ html.dark {
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 }
 
+.card {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.project-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-links a:hover {
+  color: var(--accent);
+}
 
 /* small screens */
 @media (max-width:880px){
