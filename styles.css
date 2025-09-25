@@ -47,7 +47,7 @@ body{
 }
 
 .site-header{
-  border-bottom:1px solid rgba(0,0,0,0.06);
+  border-bottom:1px solid #4da3ff;
   background: transparent;
 }
 .header-inner{
@@ -98,7 +98,7 @@ body{
   padding:10px 14px;
   border-radius:8px;
   text-decoration:none;
-  border:1px solid rgba(0,0,0,0.06);
+  border:1px solid #4da3ff;
   background:transparent;
   color:var(--text);
   font-weight:600;
@@ -145,7 +145,7 @@ body{
 /* About Me & Skills Section */
 .about {
   padding: 3rem 0;
-  background: #0b76ff; /* blue background */
+  background: #4da3ff; /* blue background */
   color: #fff;
 }
 
