@@ -12,6 +12,16 @@
   --container-width: 1100px;
 }
 
+/* Light mode override */
+.light-mode {
+  --bg: #f5f5f5;
+  --panel: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #0b76ff;
+  --primary: #0b76ff;
+}
+
 /* =========================================
    GLOBAL STYLES
    ========================================= */
@@ -31,6 +41,14 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.panel, .card, .contact {
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .container {
@@ -256,26 +274,20 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.card h3 {
-  margin: 0 0 6px;
-  font-size: 1.05rem;
-  color: var(--text);
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  background: var(--accent);
+  color: #000;
 }
 
-.card p {
-  margin: 0 0 8px;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.card .meta {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  font-size: 0.85rem;
-  color: var(--muted);
+.card:hover h3,
+.card:hover p,
+.card:hover .meta {
+  color: #000;
 }
 
 .project-img {
@@ -298,7 +310,7 @@ section {
 }
 
 .project-links a:hover {
-  color: var(--accent);
+  color: #000;
 }
 
 /* =========================================
