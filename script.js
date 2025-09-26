@@ -5,40 +5,6 @@ const GITHUB_USERNAME = "starlight-syss";
 const PROJECTS_COUNT = 6; 
 
 // =========================================
-// THEME TOGGLE (Dark mode default)
-// =========================================
-function initTheme() {
-  const btn = document.getElementById("theme-toggle");
-  const stored = localStorage.getItem("theme");
-
-  // Apply saved theme
-  if (stored === "light") {
-    document.documentElement.classList.add("light");
-    btn.textContent = "🌙";          // Moon for light mode
-    btn.setAttribute("aria-pressed", "false");
-  } else {
-    // Default dark mode
-    document.documentElement.classList.remove("light");
-    btn.textContent = "☀️";          // Sun for dark mode
-    btn.setAttribute("aria-pressed", "true");
-  }
-
-  btn.addEventListener("click", () => {
-    const isLight = document.documentElement.classList.toggle("light");
-
-    if (isLight) {
-      btn.textContent = "🌙";
-      btn.setAttribute("aria-pressed", "false");
-      localStorage.setItem("theme", "light");
-    } else {
-      btn.textContent = "☀️";
-      btn.setAttribute("aria-pressed", "true");
-      localStorage.setItem("theme", "dark");
-    }
-  });
-}
-
-// =========================================
 // HELPER: Escape HTML for safety
 // =========================================
 function escapeHtml(str) {
@@ -185,7 +151,6 @@ function setupFallbackProjects() {
 // =========================================
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
-  initTheme();
   loadProjects();
   setupFallbackProjects();
   setupContactForm();
