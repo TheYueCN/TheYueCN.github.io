@@ -1,0 +1,39 @@
+{
+"projects": [
+{
+"title": "Brick Breaker",
+"description": "A recreation of the classic Brick Breaker game made with Python and Pygame.",
+"image": "images/project1.jpg",
+"link": "https://github.com/starlight-syss/BrickBreakerClone"
+},
+{
+"title": "Cave Flyer",
+"description": "A fast-paced survival game built with Python and Pygame.",
+"image": "images/project2.jpg",
+"link": "https://github.com/starlight-syss/Cave-Flyer"
+},
+{
+"title": "Minesweeper",
+"description": "A web-based clone of Minesweeper made using HTML and JavaScript.",
+"image": "images/project3.jpg",
+"link": "https://github.com/starlight-syss/minesweeper-in-web"
+}
+],
+"videos": [
+{
+"title": "Showreel 1",
+"poster": "images/project1.jpg",
+"file": "videos/showreel1.mp4"
+},
+{
+"title": "Showreel 2",
+"poster": "images/project2.jpg",
+"file": "videos/showreel2.mp4"
+},
+{
+"title": "Showreel 3",
+"poster": "images/project3.jpg",
+"file": "videos/showreel3.mp4"
+}
+]
+}
