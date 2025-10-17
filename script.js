@@ -1,7 +1,7 @@
 // =========================================
 // Configuration
 // =========================================
-const GITHUB_USERNAME = "starlight-syss"; 
+const GITHUB_USERNAME = "theyuecn"; 
 const PROJECTS_COUNT = 6; 
 
 // =========================================
