@@ -1,0 +1,22 @@
+# Ignore the specific open files (place this .gitignore at the repo root)
+# Images
+/project1.jpg
+/project2.jpg
+/project3..jpg
+# HTML/CSS/JS/metadata
+/projects.html
+/index.html
+/README.md
+/script.js
+/styles.css
+/Project.json
+
+# Optional: ignore all JPGs if you generally don't want to commit images
+#/*.jpg
+
+# Common temp/OS files
+*.tmp
+*.temp
+*.swp
+Thumbs.db
+.DS_Store
