@@ -1,0 +1,57 @@
+# GitHub Pages / Jekyll template
+# Ignore Jekyll build output and cache
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/bundle/
+vendor/cache/
+vendor/assets/
+Gemfile.lock
+
+# Node/npm/yarn
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+dist/
+
+# Common OS / editor temp files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.tmp
+*.temp
+*.log
+
+# IDEs / editors
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Environment files
+.env
+*.env
+
+# ------------------------------------------------------------------
+# Project-specific ignores
+# Remove any of these lines if you actually want those files tracked.
+# Note: ignoring index.html, README.md or other site files will prevent
+# them from being committed and may affect GitHub Pages deployment.
+# ------------------------------------------------------------------
+/project1.jpg
+/project2.jpg
+/project3..jpg
+/script.js
+/styles.css
+/Project.json
+/gitignore.txt
