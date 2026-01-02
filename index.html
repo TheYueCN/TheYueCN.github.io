@@ -8,32 +8,21 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:,">
 </head>
+
 <body>
 
-  <main>
-
   <!-- =========================================
-
        HEADER & NAVIGATION
-
        ========================================= -->
-
   <header class="site-header">
-
     <div class="container header-inner">
-
       <a class="brand" href="index.html">Ben Kennedy</a>
 
       <nav class="main-nav">
-
         <a href="index.html" class="active">Home</a>
-
         <a href="projects.html">Projects & Showreels</a>
-
       </nav>
-
     </div>
-
   </header>
 
   <main>
@@ -52,43 +41,41 @@
           <a href="https://www.linkedin.com/in/Benjamin-Kennedy007" target="_blank" rel="noopener" class="skill">LinkedIn</a>
         </p>
       </div>
+
       <div class="hero-right">
         <img src="images/theprofile.jpg" alt="Photo of Ben Kennedy" class="avatar-img">
       </div>
     </section>
 
     <!-- =========================================
-     VIDEO SHOWCASE
-     ========================================= -->
-<section id="videos" class="container">
-  <h2>Video Showcase</h2>
-  <div class="grid">
-    <!-- Video 1 -->
-    <div class="video-wrapper">
-      <video controls width="560" height="315">
-        <source src="video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+         VIDEO SHOWCASE
+         ========================================= -->
+    <section id="videos" class="container">
+      <h2>Video Showcase</h2>
 
-    <!-- Video 2 -->
-    <div class="video-wrapper">
-      <video controls width="560" height="315">
-        <source src="video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+      <div class="grid">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-    <!-- Video 3 -->
-    <div class="video-wrapper">
-      <video controls width="560" height="315">
-        <source src="video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-</section>
+        <div class="video-wrapper">
+          <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
+        <div class="video-wrapper">
+          <video controls>
+            <source src="video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
 
     <!-- =========================================
          PROJECTS SECTION
@@ -98,14 +85,19 @@
       <p class="muted">Here are some things I’ve built recently.</p>
 
       <div class="grid">
+
         <!-- Project 1 -->
         <article class="card">
           <div class="project-info">
             <img src="project1.jpg" alt="Screenshot of Brick Breaker" class="project-img">
-            <p class="muted">I made a version of the classic Brick Breaker game using Python and Pygame.</p>
+            <p class="muted">
+              I made a version of the classic Brick Breaker game using Python and Pygame.
+            </p>
           </div>
           <div class="project-links">
-            <a href="https://github.com/TheYueCN/BrickBreakerClone" target="_blank">Brick Breaker</a>
+            <a href="https://github.com/TheYueCN/BrickBreakerClone" target="_blank">
+              Brick Breaker
+            </a>
           </div>
         </article>
 
@@ -113,10 +105,14 @@
         <article class="card">
           <div class="project-info">
             <img src="project2.jpg" alt="Screenshot of Cave Flyer" class="project-img">
-            <p class="muted">A “survive the wave” game built with Python and Pygame.</p>
+            <p class="muted">
+              A “survive the wave” game built with Python and Pygame.
+            </p>
           </div>
           <div class="project-links">
-            <a href="https://github.com/TheYueCN/Cave-Flyer" target="_blank">Cave Flyer</a>
+            <a href="https://github.com/TheYueCN/Cave-Flyer" target="_blank">
+              Cave Flyer
+            </a>
           </div>
         </article>
 
@@ -124,68 +120,62 @@
         <article class="card">
           <div class="project-info">
             <img src="project3.jpg" alt="Screenshot of Minesweeper" class="project-img">
-            <p class="muted">I built a version of Minesweeper using HTML.</p>
+            <p class="muted">
+              I built a version of Minesweeper using HTML.
+            </p>
           </div>
           <div class="project-links">
-            <a href="https://github.com/TheYueCN/minesweeper-in-web" target="_blank">Minesweeper</a>
+            <a href="https://github.com/TheYueCN/minesweeper-in-web" target="_blank">
+              Minesweeper
+            </a>
           </div>
         </article>
+
+        <!-- Project 4 (FIXED: now inside grid) -->
+        <article class="card">
+          <div class="project-info">
+            <img src="project4.jpg" alt="Screenshot of Discord Bot" class="project-img">
+            <p class="muted">
+              I built a Discord bot to track and log server invites.
+            </p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/TheYueCN/Invite-bot-discord" target="_blank">
+              Discord Bot
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
-     
-    <!-- Project 4 -->
-      <article class="card">
-       <div class="project-info">
-         <img src="project4.jpg" alt="Screenshot of Discord Bot" class="project-img">
-          <p class="muted">i built a Discord Bot.</p>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/TheYueCN/Invite-bot-discord" target="_blank">Discord Bot</a>
-        </div>
-    </article>
 
     <!-- =========================================
          ABOUT SECTION
          ========================================= -->
     <section id="about" class="about container">
       <h2>About Me</h2>
+
       <div class="about-right">
-        <p>Hello! I'm <strong>Ben Kennedy</strong>. I am a student currently enrolled in a Game Development and Design course. I have experience using multiple distributions of Linux and enjoy exploring different technologies and platforms.</p>
+        <p>
+          Hello! I'm <strong>Ben Kennedy</strong>. I am a student currently enrolled
+          in a Game Development and Design course.
+        </p>
 
-        <p>Some highlights about my experience:</p>
         <ul>
-          <li>Experience with Unreal Engine 4 and Unreal Engine 5, as well as Unity, Godot and Gamemaker.</li>
-          <li>Proficient in multiple Linux distributions, including Arch Linux, EndeavourOS, Nobara, Fedora, Linux Mint, NixOS, Debian, and Drauger Linux.</li>
-          <li>Passionate about creating engaging games and interactive experiences.</li>
-          <li>Self-taught in programming languages including JavaScript, C++, HTML, and Python.</li>
+          <li>Experience with Unreal Engine 4 & 5, Unity, Godot, and GameMaker</li>
+          <li>Experienced with Arch, EndeavourOS, Nobara, Fedora, Mint, NixOS, Debian, and Drauger</li>
+          <li>Strong interest in gameplay systems and tooling</li>
+          <li>Self-taught in JavaScript, C++, HTML, and Python</li>
         </ul>
-
-        <p>In addition to my coursework, I dedicate time to improving my programming skills and building small projects to apply what I have learned in practical settings.</p>
       </div>
     </section>
 
     <!-- =========================================
-         SKILLS & TOOLS SECTION
+         SKILLS & TOOLS
          ========================================= -->
     <section id="skills" class="skills-section container">
       <h2>Skills & Tools</h2>
 
-      <!-- Linux distributions -->
-      <div class="skills-group">
-        <h3>Linux Distributions</h3>
-        <div class="skills-grid">
-          <a href="https://archlinux.org/" target="_blank" class="skill">Arch Linux</a>
-          <a href="https://endeavouros.com/" target="_blank" class="skill">EndeavourOS</a>
-          <a href="https://nobaraproject.org/" target="_blank" class="skill">Nobara</a>
-          <a href="https://getfedora.org/" target="_blank" class="skill">Fedora</a>
-          <a href="https://linuxmint.com/" target="_blank" class="skill">Linux Mint</a>
-          <a href="https://nixos.org/" target="_blank" class="skill">NixOS</a>
-          <a href="https://www.debian.org/" target="_blank" class="skill">Debian</a>
-          <a href="https://draugeros.org/" target="_blank" class="skill">Drauger Linux</a>
-        </div>
-      </div>
-
-      <!-- Game engines -->
       <div class="skills-group">
         <h3>Game Engines</h3>
         <div class="skills-grid">
@@ -197,7 +187,6 @@
         </div>
       </div>
 
-      <!-- Programming languages -->
       <div class="skills-group">
         <h3>Programming Languages</h3>
         <div class="skills-grid">
@@ -210,25 +199,23 @@
     </section>
 
     <!-- =========================================
-         CONTACT SECTION
+         CONTACT
          ========================================= -->
     <section id="contact" class="contact container">
       <h2>Contact</h2>
-      <p>Send me a message using this form:</p>
 
-      <form id="contact-form" action="https://formspree.io/f/myznzdbr" method="POST">
+      <form action="https://formspree.io/f/myznzdbr" method="POST">
         <label>
           Your email
-          <input type="email" name="email" placeholder="you@example.com" required>
+          <input type="email" name="email" required>
         </label>
+
         <label>
           Message
           <textarea name="message" rows="4" required></textarea>
         </label>
-        <div class="form-row">
-          <button class="btn primary" type="submit">Send</button>
-        </div>
-        <p id="form-status" class="muted"></p>
+
+        <button class="btn primary" type="submit">Send</button>
       </form>
     </section>
 
@@ -239,8 +226,9 @@
        ========================================= -->
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Ben Kennedy —
-        <a href="https://github.com/TheYueCN/portfolio" target="_blank" rel="noopener">Source</a>
+      <small>
+        © <span id="year"></span> Ben Kennedy —
+        <a href="https://github.com/TheYueCN/portfolio" target="_blank">Source</a>
       </small>
     </div>
   </footer>
