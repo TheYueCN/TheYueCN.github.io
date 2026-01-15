@@ -6,7 +6,7 @@
 
 
 
-© 2025 Ben Kennedy.  
+© 2026 Alice Kennedy.  
 
 All rights reserved.
 
@@ -49,6 +49,7 @@ This project is protected under applicable copyright laws.
 Unauthorized reproduction or distribution of this material may result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under law.  
 
 Infringements may be reported and subject to DMCA takedown procedures.
+
 
 
 
